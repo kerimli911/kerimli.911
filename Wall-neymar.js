@@ -1,7 +1,7 @@
 import axios from 'axios'
 let handler = async (m, { conn, usedPrefix, command }) => {
   let res = (
-    await axios.get(`https://raw.githubusercontent.com/Guru322/api/Guru/BOT-JSON/Messi.json`)
+    await axios.get(`https://raw.githubusercontent.com/kerimli911/kerimli.911/refs/heads/main/neymarpics.json`)
   ).data
   let url = await res[Math.floor(res.length * Math.random())]
   conn.sendFile(m.chat, url, 'error.jpg', `*Neymarrr*`, m)
